@@ -1,0 +1,15 @@
+Problem : Given an array arr[] of n integers, construct a Product Array prod[] (of same size) such that prod[i] is equal to the product of all the elements of arr[] except arr[i]. Solve it without division operator in O(n) time.
+
+APPROACH:
+O(N) time and O(1) space [considering out array is not part of space calculation]
+
+We know the product of rest array on each element will be=
+  Product of elements before current index*Product of elements after current index
+
+Algorithm:
+	1. Create a new array product and initialize product[0]=1
+	2. Traverse the array from 1st Index to end.
+	3. For every index i update product[i] as products[i]=products[i-1]*nums[i-1], i.e store the product upto i-1 index from the start of array.
+	4. initialize temp = 1 and traverse the array from last index to start.
+	5. For every index i update product[i] as product[i] = product[i] * temp and temp = temp * array[i], i.e multiply with the product upto i+1 index from the end of array.
+	6. Return product array
