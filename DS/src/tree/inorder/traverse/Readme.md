@@ -1,7 +1,7 @@
-This class Represents the inorder traversal of a binary tree with:
-a) Recursion 
-    Complexity Time O(n) Space O(n)
-b)Stack without Recursion
-   Complexity Time  O(n) Space O(n)
-c) Without recursion and stack
+This class Represents the inorder traversal of a binary tree with:<br>
+a) Recursion <br>
+    Complexity Time O(n) Space O(n)<br>
+b)Stack without Recursion<br>
+   Complexity Time  O(n) Space O(n)<br>
+c) Without recursion and stack<br>
     Complexity: Time O(n) Space O(1)
